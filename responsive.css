@@ -1,0 +1,53 @@
+@media screen and (min-width: 768px) {
+
+
+    header {
+        padding: 2vw 1vw 1.75vw 1.65vw;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    header .logo {
+        height: 50px;
+    }
+
+    header div img {
+        max-width: 150px;
+        max-height: 55px;
+    }
+
+    header span {
+        display: block;
+    }
+
+    .hamburger-btn {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    header {
+        padding: 0 3px 5px 2vw;
+        height: 7.5vw;
+    }
+
+    header div img {
+        top: 1px;
+        max-width: 175px;
+        max-height: 90px;
+    }
+
+    header .logo {
+        height: 75px;
+    }
+
+    /* .header-links {
+        padding-top: 50px;
+    } */
+}

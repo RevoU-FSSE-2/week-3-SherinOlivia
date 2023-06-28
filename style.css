@@ -1,0 +1,258 @@
+*, *::after, *::before  {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(rgb(65, 64, 64),rgb(25, 24, 24));
+    width: 100%;
+    height: 20%;
+    padding: 3.5vw 1.5vw 1.25vw 2.5vw;
+}
+
+header div img {
+    width: 14.5vw;
+    height: 10.5vw;
+}
+
+header nav ul {
+    display: none;
+
+}
+
+header span {
+    display: none;
+}
+/* header .header-links {
+    
+} */
+
+header nav ul li a {
+    font-size: 1.5vw;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 1px;
+    :hover {
+      font-weight: bolder;
+    }
+  }
+
+  .header-links li {
+
+    :link {
+    color: antiquewhite;
+    }
+    :visited {
+      color: rgb(177, 45, 12);
+    }
+    :hover {
+      color: rgb(49, 13, 131);
+    }
+  }
+
+.hamburger-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: max-content;
+    position: absolute;
+    top: 12.5px;
+    right: 10.5px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.hamburger-btn::before, .hamburger-btn::after, .hamburger-btn input {
+    content: "";
+    width: 35px;
+    height: 5px;
+    background-color: rgb(177, 45, 12);
+    border-radius: 100px;  
+    transform-origin: right center;
+    transition: opacity 0.2s ease-in-out, width 0.2s ease-in-out, 
+    rotate 0.2s ease-in-out, translate 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.hamburger-btn input {
+    appearance: none;
+    pointer-events: none;
+}
+
+.hamburger-btn:has(input:checked)::before {
+    rotate: -45deg;
+    width: 35px;
+    translate: 7.5px 2.5px;
+    background-color: black;
+    margin-right: 7.5px;
+}
+
+.hamburger-btn:has(input:checked)::after {
+    rotate: 45deg;
+    width: 35px;
+    translate: 7.5px 5px;
+    background-color: black;
+
+}
+
+.hamburger-btn input:checked {
+    opacity: 0;
+    width: 0;
+}
+
+.hamburger-sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: 0% 0%;
+    transition: transform 0.5s ease-in-out;
+    transform: translate(100%, 0);
+    text-align: right;
+    width: 55vw;
+    height: 50vh;
+    padding-top: 50px;
+    padding-right: 30px;
+    background-color: rgb(177, 45, 12);
+    :link {
+        color: rgb(49, 13, 131);
+    }
+    :visited {
+        color: black;
+    }
+}
+
+ .hamburger-btn:has(input:checked) + .hamburger-sidebar {
+    translate: 0;
+}
+
+.banner {
+    background-image: url("assets/Shackles2.webp");
+    opacity: 0.9;
+    background-size: cover;
+    border-bottom-style: dashed;
+    border-bottom-color: rgba(0, 0, 0, 0.25);
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    padding: 5vw 10vw;
+}
+
+.grid-container {
+    color: rgb(214, 223, 231);
+    text-shadow: 2px 2px 3.5px rgb(177, 45, 12);
+    padding: 5vw;
+    background: linear-gradient(45deg, rgb(29, 28, 28),
+    rgb(216, 86, 86),rgb(29, 28, 28), rgb(177, 45, 12));
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.grid-container h1 {
+    text-align: center;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: repeat (4, 1fr);
+    gap: 1px;
+    /* height: 50vw; */
+}
+
+.grid-layout-image {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    filter: grayscale(2);
+    padding: 1vw;
+}
+
+.grid-layout-image:hover {
+    transform: scale(1.1);
+    filter:grayscale(0)
+  }
+
+.chief-dream {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+}
+
+.chief-entrance {
+    grid-row: 2 / span 2;
+    grid-column: 1;
+}
+
+.chief-shackle {
+    grid-row: 2;
+    grid-column: 2;
+    background-size: cover;
+}
+
+.chief-langley {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.chief-suspect-r {
+    grid-row: 4;
+    grid-column: 1 / span 2;
+}
+
+.download-links, .credit-AISNO {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: 30vw;
+    padding: 2vw 50%;
+    color: rgb(214, 223, 231);;
+}
+
+footer {
+    background: linear-gradient(45deg, rgb(29, 28, 28),
+   rgb(29, 28, 28), rgb(177, 45, 12));
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+  .download-links img {
+    width: 35vw;
+    height: auto;
+  }
