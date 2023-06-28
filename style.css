@@ -187,14 +187,14 @@ header nav ul li a {
 .grid-layout-image {
     width: 100%;
     height: 100%;
-    transition: transform 1s;
+    transition: transform 2s;
     filter: grayscale(2);
     padding: 1vw;
 }
 
 .grid-layout-image:hover {
     transform: scale(1.1);
-    filter:grayscale(0)
+    filter: grayscale(0);
   }
 
 .chief-dream {
