@@ -25,7 +25,7 @@
         display: block;
     }
 
-    .hamburger-btn {
+    .hamburger-btn, .hamburger-sidebar {
         display: none;
     }
 
