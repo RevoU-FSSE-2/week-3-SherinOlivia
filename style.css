@@ -59,7 +59,7 @@ header span {
     display: none;
 }
 
-header.logo:hover {
+header.logo a:hover {
     cursor: pointer;
 }
 
