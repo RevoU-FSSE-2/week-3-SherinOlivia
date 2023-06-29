@@ -429,11 +429,71 @@ main h3 {
  
 }
 
+legend, fieldset, select, textarea, input, button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+}
 
+.visitor-form {
+    padding: 5vw 5vw;
+    
+}
 
+form {
+    border-style: dashed;
+    padding: 5vw;
+    font-family: "Noah Regular";
+}
 
+fieldset {
+    border-style: dotted;
+    margin: 2.5vw 0;
+    padding: 1vw 1vw;
+}
 
+input[type="text"], input[type="email"], textarea {
+    display: block;
+    border: 2px solid rgb(177, 45, 12);
+    background-color: rgb(214, 223, 231);
+    border-radius: 1.5vw;
+    padding: 1.5vw 5vw;
+    margin-left: 1vw;
+    font-size: 3vw;
+}
 
+select#domisili {
+    border: 2px solid rgb(177, 45, 12);
+    background-color: rgb(214, 223, 231);
+    border-radius: 1.5vw;
+    padding: 1.5vw 15vw;
+    margin-left: 1vw;
+    font-size: 3vw;
+    background: url("assets/reddownarrow.webp") no-repeat center right 1vw;
+  }
+
+input[type="radio"], .intrigue, input[type="file"] {
+    margin-left: 1vw;
+}
+
+.form-space {
+    margin: 3vw 1vw;
+}
+
+.form-button {
+    padding-top: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15vw;
+}
+
+.form-button button {
+    padding: 1.5vw;
+    border-radius: 1.5vw;
+    font-family: "Noah Regular";
+}
 
 
 

@@ -194,7 +194,77 @@
             </div>
         </section>
 
-        <section class="visitor-forms"></section>
+        <section class="visitor-form"><form action="#" method="POST"> 
+            <fieldset>
+                <legend>Visitor Box</legend>
+                    <div>
+                    <label for="fullName" class="form-space">Full Name : </label>
+                    <input  type="text" id="inputFullName" 
+                    name="inputFullName" placeholder="Your Full Name" required/>
+                    </div>
+
+                    <div>
+                    <label for="email" class="form-space">Email : </label>
+                    <input  type="email" id="inputEmail" 
+                    name="inputEmail" placeholder="Your Email" required/>
+                    </div>
+
+                    <p class="form-space">Gender : </p>
+                        <input  type="radio" name="inputGender"
+                        id="Male" value="Male"/>
+                        <label for="Male">Male</label>
+
+                        <input  type="radio" name="inputGender"
+                        id="Female" value="Female"/>
+                        <label for="Female">Female</label>
+
+                        <input  type="radio" name="inputGender"
+                        id="Non Binary" value="Non Binary"/>
+                        <label for="Non Binary">Non Binary</label>
+
+                    <p class="form-space"><label for="domisili">Where are you From?</label></p>
+                        <select id="domisili">
+                          <option value="jabodetabek">Jabodetabek</option>
+                          <option value="jawa">Jawa</option>
+                          <option value="sumatra">Sumatra</option>
+                          <option value="kalimantan">Kalimantan</option>
+                          <option value="sulawesi">Sulawesi</option>
+                          <option value="papua">Papua</option>
+                        </select>    
+            </fieldset>
+            <fieldset>
+                <legend>Impression Box</legend>
+                    <p class="form-space">What intrigued you?</p>
+                        <input type="checkbox" class="intrigue" name="inputInterest"
+                        id="Art" value="Art" />
+                        <label for="Art">Art</label>
+
+                        <input type="checkbox" class="intrigue" name="inputInterest"
+                        id="Gameplay" value="Gameplay" />
+                        <label for="Gameplay">Gameplay</label>
+
+                        <input type="checkbox" class="intrigue" name="inputInterest"
+                        id="Storyline" value="Storyline" />
+                        <label for="Storyline">Storyline</label>
+
+                    <p class="form-space"><label for="impressionRange">Impressed Meter !</label>
+                        <input type="range" min="1" max="100" value="50" class="range-slider" id="impressionRange">
+                    </p>
+
+                    <p class="form-space">Tell us about your first impression!</p>
+                        <textarea id="formTextArea" name="firstImpression"
+                        placeholder="First Impression" cols="25%" rows="5%"></textarea>
+                    
+                    <p class="form-space">Upload your favorite in-game screenshots!</p>
+                        <input type="file" name="inGamePhoto"
+                          id="photo" required
+                          accept="image/png, image/jpeg"/>
+            </fieldset>
+            <div class="form-button">
+                <button type="submit" onclick="whySubmit()">Submit</button>
+                <button type="reset">Clear Form</button>
+            </div>
+        </form></section>
 
         <section class="trailer">
             <h4>[REDACTED]</h4>
