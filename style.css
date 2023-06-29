@@ -34,6 +34,11 @@ body {
     font-family: "Noah Regular", "Open Sans", sans-serif;
 }
 
+#img4 {
+    /* object-fit: contain; */
+    object-position: bottom;
+}
+
 .container {
     width: 100%;
     margin: auto;
@@ -91,16 +96,20 @@ header nav ul li a {
     }
   }
 
+  .hamburger-menu {
+    z-index: 5;
+  }
+
 .hamburger-btn {
     display: flex;
     flex-direction: column;
+    position: fixed;
     gap: 6px;
     width: max-content;
-    position: absolute;
     top: 12.5px;
     right: 10.5px;
-    z-index: 2;
     cursor: pointer;
+    z-index: 4;
 }
 
 .hamburger-btn::before, .hamburger-btn::after, .hamburger-btn input {
@@ -146,7 +155,7 @@ header nav ul li a {
 }
 
 .hamburger-sidebar {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0.5px;
     transition: translate 0.5s ease-in-out;
@@ -157,8 +166,8 @@ header nav ul li a {
     padding: 0.5rem 1rem;
     padding-top: 50px;
     padding-right: 10px;
-    z-index: 1;
-    border-radius: 10px;
+    z-index: 3;
+    border-bottom-left-radius: 8.5px;
     background-color: rgba(177, 45, 12, 0.95);
     :link {
         color: rgb(49, 13, 131);
@@ -202,6 +211,7 @@ main h2 {
     color: rgb(214, 223, 231);
     text-shadow: 2px 2px 3.5px rgb(177, 45, 12);
     padding: 5vw;
+    z-index: 1;
 }
 
 @keyframes gradient {
@@ -266,6 +276,82 @@ main h2 {
     grid-row: 4;
     grid-column: 1 / span 2;
 }
+
+.carousel-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 10px;
+    overflow: hidden;
+    height: 100vh;
+    padding: 5vw 5vw;
+}
+
+.carousel-container img {
+    display: block;
+    max-width: 100%;
+}
+
+.side-carousel {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.side-carousel a {
+    height: 20vh;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.side-carousel-img {
+    object-fit: cover;
+}
+
+#sideHecate {
+    object-position: 25%;
+}
+
+#sideLegion {
+    object-position: 65%;
+}
+
+.big-carousel {
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.big-carousel-img {
+    scroll-snap-align: start;
+    margin-bottom: 10px;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#img4 {
+    object-position: 25%;
+}
+
+#img5 {
+    object-position: 65%;
+}
+
+.big-carousel figure figcaption {
+    top: 0;
+    color: rgb(214, 223, 231);
+    text-shadow: 2px 2px 2px rgb(177, 45, 12); 
+    width: 100%;
+    font-family: "Noah Regular";
+    font-size: 5.5vw; 
+ 
+}
+
+
+
+
+
+
+
+
+
 
 .download-links, .credit-AISNO {
     display: flex;
