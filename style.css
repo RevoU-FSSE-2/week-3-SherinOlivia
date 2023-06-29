@@ -33,31 +33,6 @@ body {
     font-family: "Noah Regular", "Open Sans", sans-serif;
 }
 
-main h1 {
-    font-size: 6.5vw;
-    text-align: center;
-}
-
-main h1 span {
-    -webkit-text-stroke: 1px rgb(65, 64, 64);
-    text-shadow: 3px 3px 3px rgb(177, 45, 12);
-}
-
-main h2, h4 {
-    font-size: 5vw;
-    text-align: center;
-    font-family: "Noah Italic";
-    color: rgb(214, 223, 231);
-    text-shadow: 2px 2px 3.5px rgb(177, 45, 12);
-    margin-bottom: 2vw;
-}
-
-.container {
-    width: 100%;
-    margin: auto;
-}
-
-
 header {
     display: flex;
     align-items: center;
@@ -78,15 +53,15 @@ header div img {
 header nav ul {
     display: none;
     list-style: none;
-
 }
 
 header span {
     display: none;
 }
-/* header .header-links {
-    
-} */
+
+header.logo {
+    cursor: pointer;
+}
 
 header nav ul li a {
     font-size: 1.5vw;
@@ -110,7 +85,29 @@ header nav ul li a {
     }
   }
 
+  main h1 {
+    font-size: 6.5vw;
+    text-align: center;
+}
 
+main h1 span {
+    -webkit-text-stroke: 1px rgb(65, 64, 64);
+    text-shadow: 3px 3px 3px rgb(177, 45, 12);
+}
+
+main h2, h4 {
+    font-size: 5vw;
+    text-align: center;
+    font-family: "Noah Italic";
+    color: rgb(214, 223, 231);
+    text-shadow: 2px 2px 3.5px rgb(177, 45, 12);
+    margin-bottom: 2vw;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
 
 
   .hamburger-menu {
