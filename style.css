@@ -185,7 +185,7 @@ header nav ul li a {
     padding-right: 10px;
     z-index: 3;
     border-bottom-left-radius: 8.5px;
-    background: linear-gradient(45deg, rgb(29, 28, 28)10%, rgb(177, 45, 12)75%);
+    background: linear-gradient(25deg, rgb(29, 28, 28)10%, rgb(177, 45, 12)75%);
     :link {
         color: rgb(49, 13, 131);        
     }
