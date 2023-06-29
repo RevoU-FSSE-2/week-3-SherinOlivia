@@ -1,7 +1,6 @@
 *, *::after, *::before  {
     margin: 0;
     padding: 0;
-    list-style: none;
     text-decoration: none;
     box-sizing: border-box;
 }
@@ -11,11 +10,11 @@
     src: url(assets/fonts/Noah\ Regular.ttf);
 }
 
-/* @font-face {
+@font-face {
     font-family: "Noah Bold";
     src: url(assets/fonts/Noah\ Regular\ Bold.ttf);
     font-weight: bold;
-} */
+}
 
 @font-face {
     font-family: "Noah Italic";
@@ -50,7 +49,6 @@ main h2 {
     font-family: "Noah Italic";
     color: rgb(214, 223, 231);
     text-shadow: 2px 2px 3.5px rgb(177, 45, 12);
-    text-align: center;
     margin-bottom: 2vw;
 }
 
@@ -295,6 +293,50 @@ main {
 
 
 
+main h3 {
+    font-family: "Noah Regular";
+    font-size: 3.75vw;
+    text-decoration: underline;
+    color: rgb(214, 223, 231);
+    text-shadow: 2.5px 2.5px 2.5px rgb(177, 45, 12);
+    padding: 2.5vw 0;
+
+}
+
+.author-note {
+    display: block;  
+    padding: 5vw 5vw;
+    
+}
+
+#authorNote {
+    text-align: justify;
+    border-style: dotted;
+    padding: 5vw 5vw;
+    font-size: 3.5vw;
+}
+
+#dropcap:first-letter {
+    color: rgb(177, 45, 12);
+    float: left;
+    font-family: "Noah Bold";
+    font-size: 30vw;
+    line-height: 22.5vw;
+    padding: 1vw 2.5vw 1vw 0;
+    text-shadow: 2px 2px 2px rgb(29, 28, 28);
+  }
+
+  #authorNote p {
+    padding-top: 1vw;
+    padding-bottom: 1.25vw;
+  }
+
+  aside img {
+    padding-left: 1vw;
+    width: 18vw;
+    height: 20vh;
+    float: right;
+  }
 
 
 
@@ -325,6 +367,13 @@ main {
 
 .side-carousel-img {
     object-fit: cover;
+    filter: grayscale(1);
+    transition: 0.25s ease all;
+}
+
+.side-carousel-img:hover {
+    transform: scale(1.025);
+    filter: grayscale(0);
 }
 
 #sideHecate {
@@ -338,6 +387,7 @@ main {
 .big-carousel {
     overflow: scroll;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 
 .big-carousel-img {
