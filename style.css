@@ -34,9 +34,24 @@ body {
     font-family: "Noah Regular", "Open Sans", sans-serif;
 }
 
-#img4 {
-    /* object-fit: contain; */
-    object-position: bottom;
+main h1 {
+    font-size: 6.5vw;
+    text-align: center;
+}
+
+main h1 span {
+    -webkit-text-stroke: 1px rgb(65, 64, 64);
+    text-shadow: 3px 3px 3px rgb(177, 45, 12);
+}
+
+main h2 {
+    font-size: 5vw;
+    text-align: center;
+    font-family: "Noah Italic";
+    color: rgb(214, 223, 231);
+    text-shadow: 2px 2px 3.5px rgb(177, 45, 12);
+    text-align: center;
+    margin-bottom: 2vw;
 }
 
 .container {
@@ -96,21 +111,24 @@ header nav ul li a {
     }
   }
 
+
+
+
   .hamburger-menu {
     z-index: 5;
   }
 
-.hamburger-btn {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    gap: 6px;
-    width: max-content;
-    top: 12.5px;
-    right: 10.5px;
-    cursor: pointer;
-    z-index: 4;
-}
+  .hamburger-btn {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      gap: 6px;
+      width: max-content;
+      top: 12.5px;
+      right: 10.5px;
+      cursor: pointer;
+      z-index: 4;
+  }
 
 .hamburger-btn::before, .hamburger-btn::after, .hamburger-btn input {
     content: "";
@@ -184,13 +202,8 @@ main {
     animation: gradient 10s ease infinite;
 }
 
-main h2 {
-    font-family: "Noah Italic";
-    font-size: 1.1rem;
-    color: rgb(214, 223, 231);
-    text-shadow: 2px 2px 3.5px rgb(177, 45, 12);
-    margin-bottom: 3vw;
-}
+
+
 .banner {
     background-image: url("assets/Shackles2.webp");
     opacity: 0.9;
@@ -205,6 +218,12 @@ main h2 {
     height: auto;
     padding: 5vw 10vw;
 }
+
+
+
+
+
+
 
 .grid-container {
     font-family: "Noah Bold Italic";
@@ -224,11 +243,6 @@ main h2 {
 	100% {
 		background-position: 0% 50%;
 	}
-}
-
-.grid-container h1 {
-    text-align: center;
-    font-size: 1.35rem;
 }
 
 .grid-layout {
@@ -277,13 +291,20 @@ main h2 {
     grid-column: 1 / span 2;
 }
 
+
+
+
+
+
+
+
 .carousel-container {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-gap: 10px;
     overflow: hidden;
     height: 100vh;
-    padding: 5vw 5vw;
+    padding: 1vw 5vw 5vw 5vw;
 }
 
 .carousel-container img {
@@ -340,7 +361,7 @@ main h2 {
     text-shadow: 2px 2px 2px rgb(177, 45, 12); 
     width: 100%;
     font-family: "Noah Regular";
-    font-size: 5.5vw; 
+    font-size: 2.5vw; 
  
 }
 
