@@ -415,5 +415,10 @@ footer {
 .download-links img {
     width: 35vw;
     height: auto;
-    margin-right: 5vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
+
+.credit-AISNO img {
+    width: 18.5vw;
 }
