@@ -4,19 +4,20 @@
         font-size: 4.25vw;
     }
 
-    main h2 {
+    main h2, h3, h4 {
         font-size: 3vw;
     }
 
     header {
         padding: 2vw 1vw 1.75vw 1.65vw;
     }
-
+    
     header nav ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
         gap: 50px;
+        padding-right: 15vw;
     }
 
     header .logo {
@@ -30,6 +31,20 @@
 
     header span {
         display: block;
+    }
+
+    .dark-light {
+        top: 2vw;
+        right: 2vw;  
+    }
+
+    .dark-light button {
+        width: 7vw;
+        height: 7vw;
+    }
+
+    .dark-light img {
+        width: 3vw; 
     }
 
     .hamburger-btn, .hamburger-sidebar {
@@ -90,8 +105,6 @@
     }
 
 
-
-
     .side-carousel #sideHecate {
         object-position: 32.5%;
     }
@@ -100,6 +113,35 @@
         font-size: 1.85vw;
     }
 
+    .visitor-form {
+        display: block;
+    }
+
+    legend {
+        font-size: 3.5vw;
+    }
+    input[type="text"], input[type="email"], select, textarea {
+        padding: 1.5vw 3.5vw;
+        margin-left: 1vw;
+        font-size: 2vw;
+    }
+
+    input[type="radio"], .intrigue {
+        width: 2vw;
+        height: 2vw;
+    }
+
+    .form-space, input[type="file"] {
+        font-size: 2.75vw;
+    }
+    
+    .form-child {
+        font-size: 3vw;
+    }
+
+    .form-button button {
+        font-size: 3vw;
+    }
 
     .trailer iframe {
         width: 512px;
@@ -114,10 +156,26 @@
         width: 18.5vw;
     }
 }
+
+
 @media screen and (min-width: 1024px) {
 
     main h1 {
         font-size: 3.85vw;
+    }
+
+    .dark-light {
+        top: 2vw;
+        right: 2vw;  
+    }
+
+    .dark-light button {
+        width: 5.5vw;
+        height: 5.5vw;
+    }
+
+    .dark-light img {
+        width: 2.5vw; 
     }
 
     #authorNote {
@@ -151,6 +209,43 @@
         object-position: 37.5%;
     }
 
+    .visitor-form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+ 
+    legend {
+        font-size: 2vw;
+    }
+
+    .form-space, input[type="file"] {
+        font-size: 1.8vw;
+        margin: 1vw;
+    }
+
+    .form-child {
+        font-size: 1.75vw;
+    }
+
+    input[type="text"], input[type="email"], select, textarea {
+        padding: 1vw 2.5vw;
+        margin-left: 1vw;
+        font-size: 1.5vw;
+    }
+
+    input[type="radio"], .intrigue {
+        width: 1.25vw;
+        height: 1.25vw;
+    }
+
+    .form-button button {
+        font-size: 1.75vw;
+
+    }
+
+
     .trailer iframe {
         width: 768px;
         height: 320px;
@@ -182,6 +277,16 @@
 
     header .logo {
         height: 75px;
+    }
+
+    .dark-light {
+        top: 1.35vw;
+        right: 2vw;  
+    }
+
+    .dark-light button {
+        width: 5.5vw;
+        height: 5.5vw;
     }
 
     #authorNote h3 {

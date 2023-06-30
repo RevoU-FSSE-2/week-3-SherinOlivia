@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,27 +32,28 @@
             </ul>
         </nav>
 
-        <span> <em>Roo's</em> </span> 
-<!-- replace Roo's with Etti's Picture, clickable to show diff img -->
+        <section class="dark-light">
+            <button class="moon-button" id="theme-toggle">
+                <img src="assets/moon-stars.svg" alt="Moon Icon for Dark Mode">
+            </button>
+        </section>
     </header>   
-
         <section class="hamburger-menu">
-        <label class="hamburger-btn">
-            <input type="checkbox" id="hamburgerBtn" name="hamburger-button" value="Hamburger Button">
-            <label for="hamburgerBtn" hidden>Hamburger Button</label>
-        </label>
-    
+            <label class="hamburger-btn">
+                <input type="checkbox" id="hamburgerBtn" name="hamburger-button" value="Hamburger Button">
+                <label for="hamburgerBtn" hidden>Hamburger Button</label>
+            </label>
 
-        <div class="hamburger-sidebar">
-            <nav>
-                <ul>
-                    <li><a href="#chief">Chief</a></li>
-                    <li><a href="#authorNote">Author's Note</a></li>
-                    <li><a href="#gamePlay">Gameplay</a></li>
-                    <li><a href="#gallery">Bureau Intel</a></li>
-                    <li><a href="#contactAuthor">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="hamburger-sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="#chief">Chief</a></li>
+                        <li><a href="#authorNote">Author's Note</a></li>
+                        <li><a href="#gamePlay">Gameplay</a></li>
+                        <li><a href="#gallery">Bureau Intel</a></li>
+                        <li><a href="#contactAuthor">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </section> 
 
@@ -212,15 +213,15 @@
                     <p class="form-space">Gender : </p>
                         <input  type="radio" name="inputGender"
                         id="Male" value="Male"/>
-                        <label for="Male">Male</label>
+                        <label for="Male" class="form-child">Male</label>
 
                         <input  type="radio" name="inputGender"
                         id="Female" value="Female"/>
-                        <label for="Female">Female</label>
+                        <label for="Female"  class="form-child">Female</label>
 
                         <input  type="radio" name="inputGender"
                         id="Non Binary" value="Non Binary"/>
-                        <label for="Non Binary">Non Binary</label>
+                        <label for="Non Binary"  class="form-child">Non Binary</label>
 
                     <p class="form-space"><label for="domisili">Where are you From?</label></p>
                         <select id="domisili">
@@ -237,15 +238,15 @@
                     <p class="form-space">What intrigued you?</p>
                         <input type="checkbox" class="intrigue" name="inputInterest"
                         id="Art" value="Art" />
-                        <label for="Art">Art</label>
+                        <label for="Art"  class="form-child">Art</label>
 
                         <input type="checkbox" class="intrigue" name="inputInterest"
                         id="Gameplay" value="Gameplay" />
-                        <label for="Gameplay">Gameplay</label>
+                        <label for="Gameplay"  class="form-child">Gameplay</label>
 
                         <input type="checkbox" class="intrigue" name="inputInterest"
                         id="Storyline" value="Storyline" />
-                        <label for="Storyline">Storyline</label>
+                        <label for="Storyline"  class="form-child">Storyline</label>
 
                     <p class="form-space"><label for="impressionRange">Impressed Meter !</label>
                         <input type="range" min="1" max="100" value="50" class="range-slider" id="impressionRange">

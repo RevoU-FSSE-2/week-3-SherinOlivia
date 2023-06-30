@@ -29,6 +29,51 @@
     font-style: italic;
 }
 
+:root {
+    --primary-light: rgb(177, 45, 12);
+    --primary-dark: rgb(29, 28, 28);
+    --header-light-gradient: rgb(138, 135, 135);
+    --header-dark-gradient: rgb(25, 24, 24);
+    --link-hover: rgb(49, 13, 131);
+    --active-link: rgb(30, 9, 80);
+    --primary-text-color: rgb(214, 223, 231);
+    --hamburger-sidebar-dark: rgb(94, 27, 27);
+    --hamburger-menu-x: black;
+    --main-second-light: rgb(216, 86, 86);
+    --h1-text-stroke: rgb(65, 64, 64);
+    --form-submit-hover: rgb(195, 204, 212);
+}
+
+html[data-theme="dark"] {
+    --primary-light: rgb(177, 45, 12);
+    --primary-dark: rgb(29, 28, 28);
+    --header-light-gradient: rgb(138, 135, 135);
+    --header-dark-gradient: rgb(25, 24, 24);
+    --link-hover: rgb(49, 13, 131);
+    --active-link: rgb(30, 9, 80);
+    --primary-text-color: rgb(214, 223, 231);
+    --hamburger-sidebar-dark: rgb(94, 27, 27);
+    --hamburger-menu-x: black;
+    --main-second-light: rgb(216, 86, 86);
+    --h1-text-stroke: rgb(65, 64, 64);
+    --form-submit-hover: rgb(195, 204, 212);
+}
+
+html[data-theme="light"] {
+    --primary-light: rgb(255, 251, 235);
+    --primary-dark: rgb(255, 204, 0);
+    --header-light-gradient: rgb(253, 242, 191);
+    --header-dark-gradient: rgb(253, 197, 0);
+    --link-hover: rgb(216, 86, 86);
+    --active-link: rgb(216, 86, 86);
+    --primary-text-color: rgb(69, 68, 61);
+    --hamburger-sidebar-dark: rgb(255, 200, 0);
+    --hamburger-menu-x: rgb(204, 154, 16);
+    --main-second-light: rgb(216, 199, 86);
+    --h1-text-stroke: rgba(212, 212, 195, 0.566);
+    --form-submit-hover: rgb(228, 210, 107);
+}
+
 body {
     font-family: "Noah Regular", "Open Sans", sans-serif;
 }
@@ -37,7 +82,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(45deg, rgb(138, 135, 135),rgb(25, 24, 24)80%);
+    background: linear-gradient(45deg, var(--header-light-gradient), var(--header-dark-gradient)80%);
     background-size: 150% 150%;
     animation: gradient 3s ease infinite;
     width: 100%;
@@ -78,10 +123,10 @@ header nav ul li a {
     color: antiquewhite;
     }
     :visited {
-      color: rgb(177, 45, 12);
+      color: var(--primary-light);
     }
     :hover {
-      color: rgb(49, 13, 131);
+      color: var(--link-hover);
     }
   }
 
@@ -91,16 +136,16 @@ header nav ul li a {
 }
 
 main h1 span {
-    -webkit-text-stroke: 1px rgb(65, 64, 64);
-    text-shadow: 3px 3px 3px rgb(177, 45, 12);
+    -webkit-text-stroke: 1px var(--h1-text-stroke);
+    text-shadow: 3px 3px 3px var(--primary-light);
 }
 
 main h2, h4 {
     font-size: 5vw;
     text-align: center;
     font-family: "Noah Italic";
-    color: rgb(214, 223, 231);
-    text-shadow: 2px 2px 3.5px rgb(177, 45, 12);
+    color: var(--primary-text-color);
+    text-shadow: 2px 2px 3.5px var(--primary-light);
     margin-bottom: 2vw;
 }
 
@@ -109,6 +154,30 @@ main h2, h4 {
     margin: auto;
 }
 
+.dark-light {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    gap: 6px;
+    top: 3.5vw;
+    right: 18vw;  
+    cursor: pointer;
+    z-index: 4;
+    transition: 0.5s;
+}
+
+.dark-light button {
+    border-radius: 200%;
+    width: 10vw;
+    height: 10vw;
+    background-color: var(--primary-light);
+    border-color: var(--primary-dark);
+    cursor: pointer;
+}
+
+.dark-light:hover {
+    opacity: 0.8;
+}
 
   .hamburger-menu {
     z-index: 5;
@@ -130,7 +199,7 @@ main h2, h4 {
     content: "";
     width: 35px;
     height: 5px;
-    background-color: rgb(177, 45, 12);
+    background-color: var(--primary-light);
     border-radius: 100px;  
     transform-origin: right center;
     transition: opacity 0.2s ease-in-out, width 0.2s ease-in-out, 
@@ -146,7 +215,7 @@ main h2, h4 {
     rotate: -45deg;
     width: 35px;
     translate: 7.5px 2.5px;
-    background-color: black;
+    background-color: var(--hamburger-menu-x);
     margin-right: 7.5px;
 }
 
@@ -154,7 +223,7 @@ main h2, h4 {
     rotate: 45deg;
     width: 35px;
     translate: 7.5px 5px;
-    background-color: black;
+    background-color: var(--hamburger-menu-x);
 
 }
 
@@ -182,14 +251,14 @@ main h2, h4 {
     padding-right: 10px;
     z-index: 3;
     border-bottom-left-radius: 8.5px;
-    background: linear-gradient(15deg, rgb(94, 27, 27)2%, rgb(177, 45, 12)75%);
+    background: linear-gradient(15deg, var(--hamburger-sidebar-dark)2%, var(--primary-light)75%);
     background-size: 400% 400%;
     animation: gradient 2s ease infinite;
     :link {
-        color: rgb(30, 9, 80);        
+        color: var(--active-link);        
     }
     :visited {
-        color: rgb(29, 28, 28);
+        color: var(--primary-dark);
         
     }
 }
@@ -198,8 +267,8 @@ main h2, h4 {
 }
 
 main {
-    background: linear-gradient(45deg, rgb(29, 28, 28),
-    rgb(216, 86, 86),rgb(29, 28, 28), rgb(177, 45, 12));
+    background: linear-gradient(45deg, var(--primary-dark),
+    var(--main-second-light),var(--primary-dark), var(--primary-light));
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
 }
@@ -229,8 +298,8 @@ main {
 
 .grid-container {
     font-family: "Noah Bold Italic";
-    color: rgb(214, 223, 231);
-    text-shadow: 2px 2px 3.5px rgb(177, 45, 12);
+    color: var(--primary-text-color);
+    text-shadow: 2px 2px 3.5px var(--primary-light);
     padding: 5vw;
     z-index: 1;
 }
@@ -301,8 +370,8 @@ main h3 {
     font-family: "Noah Regular";
     font-size: 3.75vw;
     text-decoration: underline;
-    color: rgb(214, 223, 231);
-    text-shadow: 2.5px 2.5px 2.5px rgb(177, 45, 12);
+    color: var(--primary-text-color);
+    text-shadow: 2.5px 2.5px 2.5px var(--primary-light);
     padding: 2.5vw 0;
 
 }
@@ -316,35 +385,38 @@ main h3 {
 #authorNote {
     text-align: justify;
     border-style: dotted;
+    border-radius: 1vw;
     padding: 5vw 5vw;
     font-size: 3.5vw;
 }
 
 #dropcap:first-letter {
-    color: rgb(177, 45, 12);
+    color: var(--primary-light);
     float: left;
     font-family: "Noah Bold";
     font-size: 30vw;
     line-height: 22.5vw;
     padding: 1vw 2.5vw 1vw 0;
-    text-shadow: 2px 2px 2px rgb(29, 28, 28);
+    text-shadow: 2px 2px 2px var(--primary-dark);
   }
 
-  #authorNote p {
+  #authorNote p, ul {
+    color:var(--primary-text-color);
+    text-shadow: 2.5px 2.5px 2.5px var(--primary-light);
     padding-top: 1vw;
     padding-bottom: 1.25vw;
     :link {
-        color: rgb(49, 13, 131);        
+        color: var(--active-link);        
     }
     :visited {
-        color: rgb(18, 4, 52);
+        color: var(--primary-text-color);
     }
   }
 
   #authorNote p a {
     text-decoration: underline;
-
   }
+
   aside img {
     padding-left: 1vw;
     width: 18vw;
@@ -421,8 +493,8 @@ main h3 {
 
 .big-carousel figure figcaption {
     top: 0;
-    color: rgb(214, 223, 231);
-    text-shadow: 2px 2px 2px rgb(177, 45, 12); 
+    color: var(--primary-text-color);
+    text-shadow: 2px 2px 2px var(--primary-light); 
     width: 100%;
     font-family: "Noah Regular";
     font-size: 2.5vw; 
@@ -438,64 +510,121 @@ legend, fieldset, select, textarea, input, button {
 
 .visitor-form {
     padding: 5vw 5vw;
-    
+    display: flex;
 }
 
 form {
     border-style: dashed;
-    padding: 5vw;
+    padding: 1vw 1vw;
     font-family: "Noah Regular";
+
 }
 
 fieldset {
     border-style: dotted;
     margin: 2.5vw 0;
     padding: 1vw 1vw;
+    border-radius: 1vw;
 }
 
-input[type="text"], input[type="email"], textarea {
+input[type="text"], input[type="email"], select, textarea {
     display: block;
-    border: 2px solid rgb(177, 45, 12);
-    background-color: rgb(214, 223, 231);
+    border: 2px solid var(--primary-light);
+    background-color: var(--primary-light);
     border-radius: 1.5vw;
-    padding: 1.5vw 5vw;
+    padding: 2vw 5vw;
     margin-left: 1vw;
-    font-size: 3vw;
+    font-size: 3.5vw;
 }
 
-select#domisili {
-    border: 2px solid rgb(177, 45, 12);
-    background-color: rgb(214, 223, 231);
-    border-radius: 1.5vw;
-    padding: 1.5vw 15vw;
-    margin-left: 1vw;
-    font-size: 3vw;
-    background: url("assets/reddownarrow.webp") no-repeat center right 1vw;
+input[type="text"], input[type="email"], select, textarea :focus {
+    box-shadow: 2px var(--primary-dark);
+}
+
+select {
+    padding-right: 15vw;
+    margin-bottom: 2vw;
+    background: url("assets/caret-down.svg") no-repeat center right 1vw;
+    background-color: var(--primary-light);
   }
 
-input[type="radio"], .intrigue, input[type="file"] {
-    margin-left: 1vw;
+  .form-child {
+    font-size: 5vw;
 }
 
-.form-space {
+input[type="radio"], .intrigue {
+    margin-left: 1vw;
+    vertical-align: middle;
+    width: 5vw;
+    height: 5vw;
+    background-color: var(--primary-light);   
+}
+
+input[type="radio"] {
+    border-radius: 5vw;
+}
+
+input[type="radio"]:checked {
+    background-image: radial-gradient(var(--primary-light)35%, transparent 1vw);
+}
+
+.intrigue:checked {
+    background: url("assets/check.svg") no-repeat center 100% var(--primary-light);
+}
+
+input[type="range"] {
+    background-color: var(--primary-light);
+    border-radius: 2vw;
+    height: 2vw;
+}
+
+input[type="range"].range-slider {
+    background: var(--primary-light);
+    cursor: pointer;
+}
+
+input[type="range"]:hover {
+    opacity: 0.9;
+}
+
+::placeholder, select {
+    color: var(--primary-light);
+}
+
+.form-space, input[type="file"] {
     margin: 3vw 1vw;
+    font-family: "Noah Bold";
 }
 
 .form-button {
-    padding-top: 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15vw;
 }
 
 .form-button button {
-    padding: 1.5vw;
-    border-radius: 1.5vw;
-    font-family: "Noah Regular";
+    margin: 5vw;
+    cursor: pointer;
+    border: none;
 }
 
+button[type="submit"] {
+    padding: 1.5vw;
+    border-radius: 1.5vw;
+    box-shadow: 2px 2px 2px var(--primary-light);
+    font-family: "Noah Regular";
+    color: var(--primary-text-color);
+    background-color: var(--primary-light);
+}
 
+button[type="submit"]:hover {
+    background-color: var(--form-submit-hover);
+}
+
+button[type="reset"] {
+    text-decoration: underline;
+    font-family: "Noah Bold";
+}
 
 
 .download-links, .credit-AISNO {
@@ -505,12 +634,12 @@ input[type="radio"], .intrigue, input[type="file"] {
     width: 35vw;
     height: 30vw;
     padding: 2vw 50%;
-    color: rgb(214, 223, 231);
+    color: var(--primary-text-color);
 }
 
 footer {
-    background: linear-gradient(45deg, rgb(29, 28, 28),
-   rgb(29, 28, 28), rgb(177, 45, 12));
+    background: linear-gradient(45deg, var(--primary-dark),
+    var(--primary-dark), var(--primary-light));
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
 }
@@ -557,7 +686,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 1.5vw;
-    color: rgb(214, 223, 231);
+    color: var(--primary-text-color);
 }
 
 .author-social {
