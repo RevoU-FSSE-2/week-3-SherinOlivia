@@ -155,6 +155,19 @@
     .credit-AISNO img {
         width: 18.5vw;
     }
+
+    .author-email {
+        font-size: 3vw;
+    }
+    
+    .author-email img {
+        width: 5vw;
+    }
+    
+    #contactAuthor a img {
+        width: 5vw;
+    }
+
 }
 
 
@@ -251,6 +264,17 @@
         height: 320px;
     }
 
+    .author-email {
+        font-size: 2.5vw;
+    }
+    
+    .author-email img {
+        width: 3.5vw;
+    }
+    
+    #contactAuthor a img {
+        width: 3.5vw;
+    }
 
 }
 
@@ -298,5 +322,8 @@
         height: 512px;
     }
 
+    #contactAuthor a img {
+        width: 4vw;
+    }
 } 
 
