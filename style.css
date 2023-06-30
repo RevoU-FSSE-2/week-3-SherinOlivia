@@ -236,7 +236,7 @@ main h2, h4 {
     width: 0;
 }
 
-.hamburger-btn:has(input:checked) + .hamburger-sidebar {
+.hamburger-btn:has(input:checked) ~ .hamburger-sidebar {
     right: 0;
     translate:-0.5%;
 }
