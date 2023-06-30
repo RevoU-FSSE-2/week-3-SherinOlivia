@@ -8,18 +8,21 @@
 @font-face {
     font-family: "Noah Regular";
     src: url(assets/fonts/Noah\ Regular.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Noah Bold";
     src: url(assets/fonts/Noah\ Regular\ Bold.ttf);
     font-weight: bold;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Noah Italic";
     src: url(assets/fonts/Noah\ Regular\ Italic.ttf);
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -27,6 +30,7 @@
     src: url(assets/fonts/Noah\ Regular\ Bold\ Italic.ttf);
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
 }
 
 :root {
