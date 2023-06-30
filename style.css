@@ -588,7 +588,7 @@ input[type="range"]:hover {
 }
 
 ::placeholder, select {
-    color: var(--primary-light);
+    color: var(--primary-text-color);
 }
 
 .form-space, input[type="file"] {
