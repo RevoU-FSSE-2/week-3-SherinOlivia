@@ -271,7 +271,8 @@ main h2, h4 {
 }
 
 .roo {
-    display: none;
+    float: right;
+    font-size: 0.1px;
 }
 
 main {
