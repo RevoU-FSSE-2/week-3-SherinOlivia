@@ -98,8 +98,6 @@
 
     aside img {
         padding-left: 2vw;
-        width: 20vw;
-        height: 45vh;
         float: right;
         padding-bottom: 5vw;
     }
@@ -192,7 +190,7 @@
     }
 
     #authorNote {
-        padding: 1.5vw 5vw 10vw;
+        padding: 1.5vw 5vw 15vw;
     }
 
     #authorNote h3 {
@@ -209,11 +207,8 @@
         font-size: 1.85vw;
     }
 
-
     aside img {
         padding-left: 2vw;
-        width: 20vw;
-        height: 45vh;
         float: right;
         padding-bottom: 5vw;
     }
