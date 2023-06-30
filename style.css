@@ -270,6 +270,10 @@ main h2, h4 {
     list-style: none;
 }
 
+.roo {
+    display: none;
+}
+
 main {
     background: linear-gradient(45deg, var(--primary-dark),
     var(--main-second-light),var(--primary-dark), var(--primary-light));
