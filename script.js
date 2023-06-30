@@ -14,4 +14,8 @@ toggle.onclick = function() {
 
     document.documentElement.setAttribute('data-theme', targetTheme)
     localStorage.setItem('theme', targetTheme);
-};
+}
+
+function whySubmit() {
+    alert("Can't be bothered with all that.. Download and play the game. HMU after")
+}
