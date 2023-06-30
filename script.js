@@ -1,8 +1,10 @@
 let toggle = document.getElementById("theme-toggle");
 
+let storedTheme = localStorage.getItem('theme');
+
 toggle.onclick = function() {
-    var currentTheme = document.documentElement.getAttribute("data-theme");
-    var targetTheme = "light";
+    let currentTheme = document.documentElement.getAttribute("data-theme");
+    let targetTheme = "light";
 
     if (currentTheme === "light") {
         targetTheme = "dark";
