@@ -41,7 +41,13 @@ The deployed website has been tested in three different devices:
 </ul>
 
 #### <b>Lighthouse result (Microsoft Edge) </b>
-<img src="https://github.com/RevoU-FSSE-2/week-3-SherinOlivia/blob/main/assets/week3edgelighthouse.webp" alt="Week 3 Assignment's Lighthouse Result, above 90 for both Accessibility and SEO"/>
+<img src="https://github.com/RevoU-FSSE-2/week-3-SherinOlivia/blob/main/assets/Week3EdgeLighthouse.webp" alt="Week 3 Assignment's Microsoft Edge's Devtools Lighthouse Result, Perfect 100 for both Accessibility and SEO"/>
+
+#### <b>Lighthouse result (Google Chrome) </b>
+<img src="https://github.com/RevoU-FSSE-2/week-3-SherinOlivia/blob/main/assets/Week3ChromeLighthouse.webp" alt="Week 3 Assignment's Google Chrome's Devtools Lighthouse Result, Perfect 100 for both Accessibility and SEO"/>
+
+#### <b>Lighthouse result (Pagespeed) </b>
+<img src="https://github.com/RevoU-FSSE-2/week-3-SherinOlivia/blob/main/assets/Week3PageSpeed.webp" alt="Week 3 Assignment's PageSpeed Result, Perfect 100 for both Accessibility and SEO"/>
 
 ##### Author's Note : Although the website has been tested across three different screen resolutions and gave back a good to satisfactory result, the level of comfort for each displayed component are purely subjective and heavily dependant on each visitor's eye health status as well. 
 <p>Please be warned for possible seizure triggers as the contrast between the bright and darker colours may be triggering for some! Viewer discretion is heavily advised!</p>
