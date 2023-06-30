@@ -10,8 +10,9 @@
 
 <p>In the future, I hope to continuously update or remake this fanproject as the means to check and show my progress in my learning journey to become Software Engineer! Just like I did this week!</p>
 
-### <b>Comparison between Week 2 and Week 3 Results~</b>
+### <b>Comparison between Week 2 and Week 3 Results~ (header comparison)</b>
 <img src="https://github.com/RevoU-FSSE-2/week-2-SherinOlivia/blob/main/images/ptnfanproject.jpeg" alt="Week 2 Assignment's Web Capture!"/>
+<br>
 <img src="https://github.com/RevoU-FSSE-2/week-3-SherinOlivia/blob/main/assets/Week3Header.webp" alt="Week 3 Assignment's Web Capture!"/>
 
 ### bonus spoiler:
