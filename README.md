@@ -19,8 +19,8 @@
 
 ### <b>Features :</b>
 <ol>
-<li>fixed dark & light mode toggle button</li>
-<li>fixed and functional hamburger button</li>
+<li>fixed position dark & light mode toggle button (functional + localstorage)</li>
+<li>fixed position and functional hamburger button</li>
 <li>functional nav links</li>
 <li>Improved grid layout for introductory photos</li>
 <li>tid bits of animations in grid layout</li>
