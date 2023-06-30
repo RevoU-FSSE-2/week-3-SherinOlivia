@@ -41,7 +41,7 @@ The deployed website has been tested in three different devices:
 </ul>
 
 #### <b>Lighthouse result (Microsoft Edge) </b>
-<img src="https://github.com/RevoU-FSSE-2/week-3-SherinOlivia/blob/main/assets/Week3EdgeLighthouse.webp" alt="Week 3 Assignment's Microsoft Edge's Devtools Lighthouse Result, Perfect 100 for both Accessibility and SEO"/>
+<img src="https://github.com/RevoU-FSSE-2/week-3-SherinOlivia/blob/main/assets/week3edgelighthouse.webp" alt="Week 3 Assignment's Microsoft Edge's Devtools Lighthouse Result, Perfect 100 for both Accessibility and SEO"/>
 
 #### <b>Lighthouse result (Google Chrome) </b>
 <img src="https://github.com/RevoU-FSSE-2/week-3-SherinOlivia/blob/main/assets/Week3ChromeLighthouse.webp" alt="Week 3 Assignment's Google Chrome's Devtools Lighthouse Result, Perfect 100 for both Accessibility and SEO"/>
