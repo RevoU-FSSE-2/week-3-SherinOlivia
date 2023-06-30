@@ -11,11 +11,11 @@
 <p>In the future, I hope to continuously update or remake this fanproject as the means to check and show my progress in my learning journey to become Software Engineer! Just like I did this week!</p>
 
 ### <b>Comparison between Week 2 and Week 3 Results~</b>
-<img src="/week-2-SherinOlivia/images/ptnfanproject.jpeg" alt="Week 2 Assignment's Web Capture!"/>
-<img src="/week-3-SherinOlivia/assets/Week3Header.webp" alt="Week 3 Assignment's Web Capture!"/>
+<img src="https://github.com/RevoU-FSSE-2/week-2-SherinOlivia/blob/main/images/ptnfanproject.jpeg" alt="Week 2 Assignment's Web Capture!"/>
+<img src="https://github.com/RevoU-FSSE-2/week-3-SherinOlivia/blob/main/assets/Week3Header.webp" alt="Week 3 Assignment's Web Capture!"/>
 
 ### bonus spoiler:
-<img src="/week-3-SherinOlivia/assets/Week3Mobile.webp" alt="Week 3 Assignment's Mobile Web Capture!"/>
+<img src="https://github.com/RevoU-FSSE-2/week-3-SherinOlivia/blob/main/assets/Week3Mobile.webp" alt="Week 3 Assignment's Mobile Web Capture!"/>
 
 ### <b>Features :</b>
 <ol>
@@ -38,12 +38,15 @@ The deployed website has been tested in three different devices:
 <li>Android Phone (M)</li>
 </ul>
 
+#### <b>Lighthouse result (Microsoft Edge) </b>
+<img src="https://github.com/RevoU-FSSE-2/week-3-SherinOlivia/blob/main/assets/week3edgelighthouse.webp" alt="Week 3 Assignment's Lighthouse Result, above 90 for both Accessibility and SEO"/>
+
 ##### Author's Note : Although the website has been tested across three different screen resolutions and gave back a good to satisfactory result, the level of comfort for each displayed component are purely subjective and heavily dependant on each visitor's eye health status as well. 
 <p>Please be warned for possible seizure triggers as the contrast between the bright and darker colours may be triggering for some! Viewer discretion is heavily advised!</p>
 
 
 ###### <b>Contact Me ~</b>
-<img src="/week-2-SherinOlivia/images/gmaillogo.png" alt="gmail"/> SOChronicle@gmail.com (personal)
-<img src="/week-2-SherinOlivia/images/gmaillogo.png" alt="gmail"/> SOlivia198@gmail.com (work)
+<img src="https://github.com/RevoU-FSSE-2/week-3-SherinOlivia/blob/main/assets/gmaillogo.webp" alt="gmail"/> SOChronicle@gmail.com (personal)
+<img src="https://github.com/RevoU-FSSE-2/week-3-SherinOlivia/blob/main/assets/gmaillogo.webp" alt="gmail"/> SOlivia198@gmail.com (work)
 
-<a href="https://discord.com/users/shxdxr#7539" target="_blank"><img src="images/discordlogo.png" class="discordLogo" alt="discord"/></a>&ensp;<a href="https://instagram.com/shxdxr?igshid=MzRlODBiNWFlZA==" target="_blank"><img src="images/instagramlogo.png" class="instagramLogo" alt="instagram"/></a>&ensp;<a href="https://www.linkedin.com/in/sherin-olivia-07311127a/" target="_blank"><img src="images/linkedinlogo.png" class="linkedLogo" alt="linkedin"/></a>
+<a href="https://discord.com/users/shxdxr#7539" target="_blank"><img src="https://github.com/RevoU-FSSE-2/week-3-SherinOlivia/blob/main/assets/reddiscordlogo.webp" class="discordLogo" alt="discord"/></a>&ensp;<a href="https://instagram.com/shxdxr?igshid=MzRlODBiNWFlZA==" target="_blank"><img src="https://github.com/RevoU-FSSE-2/week-3-SherinOlivia/blob/main/assets/redinstagramlogo.webp" class="instagramLogo" alt="instagram"/></a>&ensp;<a href="https://www.linkedin.com/in/sherin-olivia-07311127a/" target="_blank"><img src="https://github.com/RevoU-FSSE-2/week-2-SherinOlivia/blob/main/images/linkedinlogo.png" class="linkedLogo" alt="linkedin"/></a>

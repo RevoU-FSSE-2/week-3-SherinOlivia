@@ -69,7 +69,7 @@ html[data-theme="light"] {
     --primary-text-color: rgb(69, 68, 61);
     --hamburger-sidebar-dark: rgb(255, 200, 0);
     --hamburger-menu-x: rgb(204, 154, 16);
-    --main-second-light: rgb(223, 210, 131);
+    --main-second-light: rgb(216, 199, 86);
     --h1-text-stroke: rgba(212, 212, 195, 0.566);
     --form-submit-hover: rgb(228, 210, 107);
 }
