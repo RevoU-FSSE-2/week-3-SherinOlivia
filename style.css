@@ -522,6 +522,7 @@ form {
 
 fieldset {
     border-style: dotted;
+    border-color: var(--primary-text-color);
     margin: 2.5vw 0;
     padding: 1vw 1vw;
     border-radius: 1vw;
