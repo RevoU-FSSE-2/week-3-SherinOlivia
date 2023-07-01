@@ -545,8 +545,17 @@ input[type="text"], input[type="email"], select, textarea {
     font-size: 3.5vw;
 }
 
-input[type="text"], input[type="email"], select, textarea :focus {
+input[type="text"], input[type="email"], input[type="date"], select, textarea :focus {
     box-shadow: 2px var(--primary-dark);
+}
+
+input[type="date"] {
+    border: 2px solid var(--primary-light);
+    background-color: var(--primary-light);
+    border-radius: 1.25vw;
+    padding: 0.5vw 3.5vw;
+    font-size: 1.75vw;
+    margin-top: 2.5vw;
 }
 
 select {
@@ -595,7 +604,7 @@ input[type="range"]:hover {
     opacity: 0.9;
 }
 
-::placeholder, select {
+::placeholder, input[type="date"], select {
     color: var(--primary-text-color);
 }
 
